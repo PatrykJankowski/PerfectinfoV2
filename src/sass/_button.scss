@@ -1,0 +1,40 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 1.25rem;
+    border-radius: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    @include font-size(18);
+    font-weight: 700;
+    background-color: $white;
+    color: $text-color;
+    text-transform: uppercase;
+    transition: all 300ms;
+
+    @media (min-width: $resolution-xl) {
+        padding: 0 1.5rem;
+        @include font-size(19);
+    }
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+        transition: all 300ms;
+    }
+
+    &--primary {
+        background-color: $primary;
+        color: $white;
+
+
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary;
+        color: $white;
+    }
+}

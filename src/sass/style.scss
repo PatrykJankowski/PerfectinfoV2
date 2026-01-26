@@ -1,0 +1,26 @@
+/*!
+Theme Name: Perfectinfo
+Theme URI: https://github.com/patrykjankowski/perfectinfo2
+Author: Patryk Jankowski – Softcraft
+Author URI: https://softcraft.pl
+Description: Perfectinfo
+Version: 2.0.0
+Text Domain: Perfectinfo
+*/
+
+
+//styles
+@import "variables";
+@import "base";
+@import "button";
+@import "navigation";
+@import "footer";
+@import "utilities";
+@import "wordpress";
+@import "logos";
+@import "testimonials";
+
+//tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,51 @@
+/* Spacing */
+$xs: 10px;
+$s: 20px;
+$m: 35px;
+$l: 70px;
+$xl: 120px;
+
+
+/* Sizes */
+$navigation-height: 100px;
+$navigation-height-mobile: 80px;
+
+
+/* Colors */
+$black: #000;
+$gray-light: #F7F7F7;
+$gray-light-2: #EEEEEE;
+$gray: #B7B7B7;
+$gray-dark: #707070;
+$white: #fff;
+$blue: #39C9F0;
+$blue-dark: #093363;
+$yellow: #E7B222;
+
+$primary: $blue;
+$secondary: $blue-dark;
+$text-color: $blue-dark;
+
+
+/* Fonts */
+$text-size: calc(18rem/18);
+
+$h1-size: calc(54rem/18);
+$h2-size: calc(44rem/18);
+$h3-size: calc(30rem/18);
+$h4-size: calc(24rem/18);
+$h5-size: calc(18rem/18);
+
+
+/* Resolutions */
+$resolution-sm: 576px;
+$resolution-md: 768px;
+$resolution-lg: 992px;
+$resolution-xl: 1200px;
+$resolution-xxl: 1480px;
+
+
+// Mixins
+@mixin font-size($fontSize) {
+    font-size: calc($fontSize / 16) + rem;
+}
