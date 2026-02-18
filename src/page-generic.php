@@ -3,6 +3,13 @@
 get_header();
 ?>
 
+<?php
+$embed = get_field('page_embed');
+if ($embed) {
+    echo $embed;
+}
+?>
+
 <?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/perfectinfo/img/bg-small-4.webp']); ?>
 
 
