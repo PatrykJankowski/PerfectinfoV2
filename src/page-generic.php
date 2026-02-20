@@ -3,15 +3,18 @@
 get_header();
 ?>
 
-<?php
-$embed = get_field('page_embed');
-if ($embed) {
-    echo $embed;
-}
-?>
-
 <?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/perfectinfo/img/bg-small-4.webp']); ?>
 
+
+<?php
+$embed = get_field('page_embed');
+if ($embed) { ?>
+<section class="pb-16 single-page">
+    <div class="container mx-auto px-6">
+        <?php echo $embed; ?>
+    </div>
+</section>
+<?php } ?>
 
 <!-- Section -->
 <section class="pb-16 single-page">
