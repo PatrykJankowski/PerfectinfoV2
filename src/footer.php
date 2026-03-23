@@ -2,7 +2,7 @@
 
 
 <footer
-  class="text-white mt-24 pt-24 xl:pt-8 pb-4 flex flex-col justify-end min-h-[520px] bg-cover bg-top bg-[url(/wp-content/themes/perfectinfo/img/footer-bg.webp)]">
+  class="text-white mt-24 pt-24 xl:pt-8 pb-4 flex flex-col justify-end min-h-[400px] bg-cover bg-top bg-[url(/wp-content/themes/perfectinfo/img/footer-bg.webp)]">
   <h1 class="visually-hidden">Stopka</h1>
 
   <div class="container mx-auto px-6">
@@ -86,15 +86,6 @@
             <li><a href="/outsourcing-funkcji-iod" class="hover:text-primary">Outsorcing funkcji IOD</a></li>
           </ul>
         </div>
-      </div>
-
-      <div class="col-span-12 md:col-span-4">
-        <h2 id="noptin-form-1__title" class="font-semibold font-Poppins text-primary uppercase mb-4">Zapisz się do
-          naszego newslettera</h2>
-        <?php echo do_shortcode('[noptin form=8375]'); ?>
-        <a href="/informacje-o-przetwarzaniu-danych-osobowych-za-posrednictwem-formularza-kontaktowego"
-          class="text-sm color-grey" style="text-decoration: underline">Informacje na temat przetwarzania danych
-          osobowych</a>
       </div>
     </div>
 

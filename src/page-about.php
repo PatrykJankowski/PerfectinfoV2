@@ -26,7 +26,15 @@
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-6 flex justify-center order-2 xl:order-1">
-                <img src="/wp-content/themes/perfectinfo/img/ludzie.png" alt="" class="xl:absolute bottom-0 -ml-12">
+                <?php
+                $image = get_field('business_image');
+
+                $image_url = $image ? $image['url'] : get_template_directory_uri() . '/img/ludzie.png';
+                $image_alt = $image && !empty($image['alt']) ? $image['alt'] : 'Ludzie';
+                ?>
+
+                <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_alt); ?>"
+                    class="xl:absolute bottom-0 -ml-12">
             </div>
             <div class="col-span-12 xl:col-span-6 order-1 xl:order-2">
                 <h2 class="font-bold text-4xl mb-6"><?php the_field('business_title'); ?></h2>
@@ -268,7 +276,8 @@
 </section>
 
 
-<section class="relative py-24 bg-cover bg-[url(/wp-content/themes/perfectinfo/img/bg-1-mobile.webp)] sm:bg-[url(/wp-content/themes/perfectinfo/img/bg-1.webp)]">
+<section
+    class="relative py-24 bg-cover bg-[url(/wp-content/themes/perfectinfo/img/bg-1-mobile.webp)] sm:bg-[url(/wp-content/themes/perfectinfo/img/bg-1.webp)]">
     <div class="container mx-auto px-6 text-center relative z-10">
         <h2 class="text-5xl md:text-6xl font-bold mb-6"><?php the_field('about_title'); ?></h2>
         <p class="max-w-3xl mx-auto">
